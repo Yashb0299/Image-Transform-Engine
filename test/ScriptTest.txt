@@ -1,0 +1,111 @@
+# Load an image in PPM format and call it 'test-image'
+load res/images/test-image.jpg test-image
+
+# Test brightness (increase by 20 units)
+brighten 20 test-image test-image-brighter
+
+# Test horizontal flip
+horizontal-flip test-image test-image-horizontal-flip
+
+# Test RGB split into red, green, and blue components
+rgb-split test-image test-image-red test-image-green test-image-blue
+
+# Test RGB combine using the split channels (should recreate original image)
+rgb-combine test-image-recombined test-image-red test-image-green test-image-blue
+
+# Test greyscale using value component
+value-component test-image test-image-value-greyscale
+
+# Test greyscale using luma component
+luma-component test-image test-image-luma-greyscale
+
+# Test greyscale using intensity component
+intensity-component test-image test-image-intensity-greyscale
+
+# Test sepia effect
+sepia test-image test-image-sepia
+
+# Test blur effect
+blur test-image test-image-blur
+
+# Test sharpen effect
+sharpen test-image test-image-sharpen
+
+# Test brightness by decreasing the brightness by 50 units
+brighten -50 test-image test-image-darker
+
+# Flip the darkened image horizontally and vertically
+horizontal-flip test-image-darker test-image-darker-horizontal-flip
+vertical-flip test-image-darker test-image-darker-vertical-flip
+
+# Extract red, green, and blue components from the darkened image
+rgb-split test-image-darker test-image-darker-red test-image-darker-green test-image-darker-blue
+
+# Test RGB combine using the darkened split channels (should recreate darkened image)
+rgb-combine test-image-darker-recombined test-image-darker-red test-image-darker-green test-image-darker-blue
+
+# Apply sepia to the recombined image
+sepia test-image-darker-recombined test-image-sepia
+
+# Load another image and call it 'city-image' in JPG format
+load res/images/city.jpg city-image
+
+# Test RGB split
+rgb-split city-image city-image-red city-image-green city-image-blue
+
+# Sharpen the red component of the city image
+sharpen city-image-red city-image-red-sharpened
+
+# Flip the blue component of the city image vertically
+vertical-flip city-image-blue city-image-blue-vertical-flip
+
+# Apply sepia to the green component
+sepia city-image-green city-image-green-sepia
+
+# Combine the modified RGB components
+rgb-combine city-image-recombined city-image-red-sharpened city-image-green-sepia city-image-blue-vertical-flip
+
+# Load a landscape image in PNG format
+load res/images/landscape.png landscape-image
+
+# Apply intensity greyscale to the landscape image
+intensity-component landscape-image landscape-intensity
+
+# Apply sepia effect on the intensity component
+sepia landscape-intensity landscape-intensity-sepia
+
+# Flip the sepia image horizontally
+horizontal-flip landscape-intensity-sepia landscape-sepia-horizontal-flip
+
+# Extract RGB components from the sepia image
+rgb-split landscape-sepia-horizontal-flip landscape-red landscape-green landscape-blue
+
+# Combine the original landscape's red, green, and blue
+rgb-combine landscape-recombined landscape-red landscape-green landscape-blue
+
+# Load an image in PPM format and call it 'ppm-test-image'
+load res/images/ppm-test-image.ppm ppm-test-image
+
+# Brighten the image by 20 units
+brighten 20 ppm-test-image ppm-test-image-brighter
+
+# Darken the image by 10 units
+brighten -10 ppm-test-image ppm-test-image-darker
+
+# Flip the image horizontally
+horizontal-flip ppm-test-image ppm-test-image-horizontal-flip
+
+# Flip the image vertically
+vertical-flip ppm-test-image ppm-test-image-vertical-flip
+
+# Split the image into red, green, and blue components
+rgb-split ppm-test-image ppm-test-image-red ppm-test-image-green ppm-test-image-blue
+
+# Combine the red, green, and blue components back into a single image
+rgb-combine ppm-test-image-recombined ppm-test-image-red ppm-test-image-green ppm-test-image-blue
+
+# Apply a value greyscale transformation
+value-component ppm-test-image ppm-test-image-value-greyscale
+
+# Apply a luma greyscale transformation
+luma-component ppm-test-image ppm-test-image-luma-greyscale
