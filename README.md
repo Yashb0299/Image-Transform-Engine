@@ -149,12 +149,6 @@ luma-component ppm-test-image ppm-test-image-luma-greyscale
 
 ------------------------------------------------------------------------
 
-## Architecture
-
-### UML Diagram
-
-![UML](res/UML.jpg)
-
 ### MVC Overview
 
 ```         
