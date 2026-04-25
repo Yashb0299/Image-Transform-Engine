@@ -36,8 +36,6 @@ Every output below was produced entirely by Image-Transform-Engine.
 |----|----|----|
 | ![](res/PNG/Mountain-horizontal.png) | ![](res/PNG/Mountain-vertical.png) | ![](res/PNG/Mountain-vertical-then-horizontal.png) |
 
-*Photos by Yash Bhuptani.*
-
 ------------------------------------------------------------------------
 
 ## What It Can Do
