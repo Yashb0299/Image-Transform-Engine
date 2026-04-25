@@ -1,6 +1,6 @@
 # Image Transform Engine
 
-![Java](https://img.shields.io/badge/Java-8+-orange?logo=java&logoColor=white) ![Architecture](https://img.shields.io/badge/Architecture-MVC-blue) ![Formats](https://img.shields.io/badge/Formats-PNG%20%7C%20JPG%20%7C%20PPM-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green) ![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![Java](https://img.shields.io/badge/Java-8+-orange?logo=java&logoColor=white) ![Architecture](https://img.shields.io/badge/Architecture-MVC-blue) ![Formats](https://img.shields.io/badge/Formats-PNG%20%7C%20JPG%20%7C%20PPM-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
 
 > A pixel-level image processing engine built from scratch in Java — no third-party image libraries, just pure matrix math, kernel convolution, and a scriptable command interface.
 
